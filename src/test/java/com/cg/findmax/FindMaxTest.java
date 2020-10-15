@@ -21,5 +21,12 @@ public class FindMaxTest {
         int result = FindMax.FindMaxInt(2, 1, 3);
         Assert.assertEquals(3, result);
     }
+
+    @Test
+    public void givenFloatMaxAtPos1_ReturnTrue() {
+        Float result = FindMax.FindMaxFloat(3.0f, 2.0f, 1.0f);
+        Assert.assertEquals(3.0, result, 0.0);
+    }
+
 }
 
