@@ -44,5 +44,16 @@ public class FindMaxTest {
         Assert.assertEquals("Zip", result);
     }
 
+    @Test
+    public void givenGenericMaxAtPos1_ReturnTrue() {
+        int result = FindMax.FindMaxGeneric(3, 2, 1);
+        Assert.assertEquals(3, result);
+    }
+
+    public void givenGenereicMaxAtPos3_ReturnTrue() {
+        String result = FindMax.FindMaxGeneric("Ant","Car", "Zip");
+        Assert.assertEquals("Zip", result);
+    }
+
 }
 

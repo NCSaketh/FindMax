@@ -39,6 +39,16 @@ public class FindMax {
             return c;
         }
     }
+
+    public static <G extends Comparable<G>> G FindMaxGeneric(G a, G b, G c)
+    {
+        if (a.compareTo(b)>0 && a.compareTo(c)>0)
+            return a;
+        else if (b.compareTo(a)>0 && b.compareTo(c)>0)
+            return b;
+        else
+            return c;
+    }
 }
 
 
