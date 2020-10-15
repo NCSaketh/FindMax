@@ -6,7 +6,7 @@ public class FindMax {
         FindMax m=new FindMax();
     }
 
-    public Integer FindMaxInt(Integer a,Integer b,Integer c)
+    public static Integer FindMaxInt(Integer a, Integer b, Integer c)
     {
         if (a.compareTo(b)>0 && a.compareTo(c)>0)
             return a;
