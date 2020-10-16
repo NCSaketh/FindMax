@@ -17,6 +17,11 @@ public class GenericMax<G> {
         }
     }
 
+    public static void main(String[] args) {
+
+        GenericMax G=new GenericMax();
+    }
+
     public static <G extends Comparable<G>> G FindMaxGeneric(G...items) {
         G max=items[0];
         ArrayList<G> array=new ArrayList();
@@ -24,13 +29,21 @@ public class GenericMax<G> {
             array.add(i);
         }
         Collections.sort(array);
+        printMax(array.get(array.size()-1),items);
         return array.get(array.size()-1);
     }
 
-    public static void main(String[] args) {
-
-        GenericMax G=new GenericMax();
+    private static <G> void printMax(G max,G...items)
+    {
+        System.out.println("The maximum item is");
+        for(G i:items)
+        {
+            System.out.println(i+" ");
+        }
+        System.out.println(max);
     }
+
+
 
 
 }
