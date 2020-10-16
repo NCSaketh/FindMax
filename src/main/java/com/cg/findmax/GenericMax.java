@@ -1,5 +1,8 @@
 package com.cg.findmax;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class GenericMax<G> {
 
     static class MaxTestInput<G extends Comparable<G>> {
@@ -14,9 +17,14 @@ public class GenericMax<G> {
         }
     }
 
-    public static <G extends Comparable<G>> G FindMaxGeneric(G[] array) {
-        G max = array[0].compareTo(array[1]) > 0 ? array[0] : array[1];
-        return max.compareTo(array[2]) > 0 ? max : array[2];
+    public static <G extends Comparable<G>> G FindMaxGeneric(G...items) {
+        G max=items[0];
+        ArrayList<G> array=new ArrayList();
+        for(G i:items) {
+            array.add(i);
+        }
+        Collections.sort(array);
+        return array.get(array.size()-1);
     }
 
     public static void main(String[] args) {
