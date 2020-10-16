@@ -30,17 +30,19 @@ public class FindMaxTest {
 
     @Test
     public void givenStringMaxAtPos1_ReturnTrue() {
-        String result = FindMax.FindMaxString("Zip","Car", "Ant");
+        String result = FindMax.FindMaxString("Zip", "Car", "Ant");
         Assert.assertEquals("Zip", result);
     }
+
     @Test
     public void givenStringMaxAtPos2_ReturnTrue() {
-        String result = FindMax.FindMaxString("Car","Zip", "Ant");
+        String result = FindMax.FindMaxString("Car", "Zip", "Ant");
         Assert.assertEquals("Zip", result);
     }
+
     @Test
     public void givenStringMaxAtPos3_ReturnTrue() {
-        String result = FindMax.FindMaxString("Ant","Car", "Zip");
+        String result = FindMax.FindMaxString("Ant", "Car", "Zip");
         Assert.assertEquals("Zip", result);
     }
 
@@ -51,9 +53,16 @@ public class FindMaxTest {
     }
 
     public void givenGenereicMaxAtPos3_ReturnTrue() {
-        String result = FindMax.FindMaxGeneric("Ant","Car", "Zip");
+        String result = FindMax.FindMaxGeneric("Ant", "Car", "Zip");
         Assert.assertEquals("Zip", result);
     }
 
+    @Test
+    public void maximumTest() {
+
+        GenericMax.MaxTestInput<String> Input = new GenericMax.MaxTestInput<>(new String[]{"Ant", "Car", "Zip"});
+        String result = Input.testMaximum();
+        Assert.assertEquals("Zip", result);
+    }
 }
 

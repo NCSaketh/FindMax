@@ -2,10 +2,13 @@ package com.cg.findmax;
 
 public class FindMax {
 
+
+
     public static void main(String[] args) {
         FindMax m=new FindMax();
         System.out.println("Welcome to find the maximum ");
     }
+
 
     public static Integer FindMaxInt(Integer a, Integer b, Integer c)
     {

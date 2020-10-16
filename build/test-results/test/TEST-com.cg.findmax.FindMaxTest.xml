@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.cg.findmax.FindMaxTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-10-15T20:09:31" hostname="LAPTOP-M4C7MB0K" time="0.017">
+<testsuite name="com.cg.findmax.FindMaxTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-10-16T16:40:58" hostname="LAPTOP-M4C7MB0K" time="0.01">
   <properties/>
   <testcase name="givenStringMaxAtPos2_ReturnTrue" classname="com.cg.findmax.FindMaxTest" time="0.003"/>
-  <testcase name="givenStringMaxAtPos3_ReturnTrue" classname="com.cg.findmax.FindMaxTest" time="0.002"/>
-  <testcase name="givenFloatMaxAtPos1_ReturnTrue" classname="com.cg.findmax.FindMaxTest" time="0.001"/>
-  <testcase name="givenMaxAtPos1_ReturnTrue" classname="com.cg.findmax.FindMaxTest" time="0.001"/>
+  <testcase name="givenStringMaxAtPos3_ReturnTrue" classname="com.cg.findmax.FindMaxTest" time="0.0"/>
+  <testcase name="givenFloatMaxAtPos1_ReturnTrue" classname="com.cg.findmax.FindMaxTest" time="0.0"/>
+  <testcase name="givenMaxAtPos1_ReturnTrue" classname="com.cg.findmax.FindMaxTest" time="0.0"/>
   <testcase name="givenMaxAtPos2_ReturnTrue" classname="com.cg.findmax.FindMaxTest" time="0.0"/>
-  <testcase name="givenMaxAtPos3_ReturnTrue" classname="com.cg.findmax.FindMaxTest" time="0.001"/>
+  <testcase name="givenMaxAtPos3_ReturnTrue" classname="com.cg.findmax.FindMaxTest" time="0.0"/>
+  <testcase name="maximumTest" classname="com.cg.findmax.FindMaxTest" time="0.004"/>
   <testcase name="givenStringMaxAtPos1_ReturnTrue" classname="com.cg.findmax.FindMaxTest" time="0.0"/>
   <testcase name="givenGenericMaxAtPos1_ReturnTrue" classname="com.cg.findmax.FindMaxTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
